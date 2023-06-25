@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  /* outline: 1px solid white; */
+}
+@layer components {
+    .nav {
+        @apply sm:px-6 border-y bg-zinc-800 sm:bg-transparent sm:border-none py-7 md:p-7 sm:after:w-2/12 hover:text-purple-500 duration-300 after:duration-300 relative after:w-1/12 after:opacity-0 hover:after:opacity-100 cursor-pointer after:content-[""] after:bg-white after:h-1 after:absolute after:right-1/2 after:left-1/2 after:-translate-x-1/2 after:rounded-xl after:bottom-5
+    }
+    .text {
+      @apply font-semibold text-neutral-50
+    }
+}
