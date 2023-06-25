@@ -3,7 +3,7 @@ import React from 'react';
 const Clients = () => {
   return (
     <>
-      <div className="w-full px-4 bg-current flex flex-col">
+      <div className="w-full bg-current flex flex-col">
         {/* content */}
         <p className="text-left text-2xl sm:text-4xl font-light text-gray-500 w-full p-10 sm:p-20">
           Some of <span className="text">the clients I have designed for</span>

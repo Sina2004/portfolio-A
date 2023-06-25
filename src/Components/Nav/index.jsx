@@ -1,10 +1,29 @@
 import React, { useState } from 'react';
 
 const Nav = () => {
+  // open navigation
   const [active, setActive] = useState(false);
+  // navbar blur events
+  const [change, setChange] = useState(false);
+  function changeColorNav() {
+    if (window.scrollY >= 80) {
+      setChange(true);
+    } else {
+      setChange(false);
+    }
+  }
+  window.addEventListener('scroll', changeColorNav);
+  // active section
+  function hi() {
+    
+  }
   return (
     <>
-      <div className='fixed w-full h-20 z-50'>
+      <div
+        className={`fixed top-0 w-full h-20 z-50 duration-300 ${
+          change ? 'backdrop-blur-sm bg-purple-900/20' : ''
+        }`}
+      >
         <div className="w-full relative h-full flex items-center justify-between md:px-14 px-8">
           {/* logo */}
           <span>
@@ -135,7 +154,9 @@ const Nav = () => {
               active ? 'translate-x-0' : ''
             }`}
           >
-            <li className="nav text-center">HOME</li>
+            <li onClick={hi} id='Home' className="nav text-center">
+              HOME
+            </li>
             <li className="nav text-center">WORK</li>
             <li className="nav text-center">ABOUT</li>
           </ul>

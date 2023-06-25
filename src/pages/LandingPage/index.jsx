@@ -1,6 +1,8 @@
 import React from 'react';
 import Clients from '../../Components/Clients';
 import Nav from './../../components/Nav/index';
+import Work from '../../Components/Work';
+import AboutMe from '../../Components/About me';
 
 
 const LandingPage = () => {
@@ -23,6 +25,10 @@ const LandingPage = () => {
       </div>
       {/* clients */}
       <Clients/>
+      {/* work */}
+      <Work/>
+      {/* about me */}
+      <AboutMe/>
     </div>
     </>
   );
