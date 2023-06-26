@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import Clients from '../../Components/Clients';
-import Nav from './../../components/Nav/index';
 import Work from '../../Components/Work';
 import AboutMe from '../../Components/About me';
 import Footer from '../../Components/Footer';
+import Nav from './../../Components/Nav/index.jsx';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
