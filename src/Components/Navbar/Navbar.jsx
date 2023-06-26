@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
-const Nav = () => {
+const Navbar = () => {
   // open navigation
   const [active, setActive] = useState(false);
   // navbar blur events
@@ -170,4 +170,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navbar;

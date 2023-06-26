@@ -3,7 +3,7 @@ import Clients from '../../Components/Clients';
 import Work from '../../Components/Work';
 import AboutMe from '../../Components/About me';
 import Footer from '../../Components/Footer';
-import Nav from './../../Components/Nav/index.jsx';
+import Navbar from '../../Components/Navbar/Navbar.jsx';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -17,7 +17,7 @@ const LandingPage = () => {
 
   return (
     <>
-    <Nav/>
+    <Navbar/>
     <div className='w-full h-screen '>
         {/* text */}
       <div id="home" className='flex items-center justify-center h-full w-full relative px-4'>
