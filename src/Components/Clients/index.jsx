@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Clients = () => {
+
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  },[]);
+
   return (
     <>
-      <div className="w-full bg-current flex flex-col">
+      <div id='clients' className="w-full bg-zinc-950 flex flex-col max-h-max">
         {/* content */}
-        <p className="text-left text-2xl sm:text-4xl font-light text-gray-500 w-full p-10 sm:p-20">
+        <p data-aos="fade-right" className="text-left text-2xl sm:text-4xl font-light text-gray-500 w-full p-10 sm:p-20">
           Some of <span className="text">the clients I have designed for</span>
         </p>
         {/* clients logo or name */}
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 grid-rows-2 md:grid-rows-2 gap-y-8 gap-x-4 md:gap-x-10 px-10 sm:pl-20 py-16">
+        <div data-aos="fade-up" className="w-full grid grid-cols-2 sm:grid-cols-4 grid-rows-2 md:grid-rows-2 gap-y-8 gap-x-4 md:gap-x-10 px-10 sm:pl-20 py-16">
           {/* 1 */}
           <span className='flex items-center'>
             <svg

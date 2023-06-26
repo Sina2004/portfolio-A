@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import * as Scroll from 'react-scroll';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 const Nav = () => {
   // open navigation
@@ -6,7 +9,7 @@ const Nav = () => {
   // navbar blur events
   const [change, setChange] = useState(false);
   function changeColorNav() {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 200) {
       setChange(true);
     } else {
       setChange(false);
@@ -21,7 +24,7 @@ const Nav = () => {
     <>
       <div
         className={`fixed top-0 w-full h-20 z-50 duration-300 ${
-          change ? 'backdrop-blur-sm bg-purple-900/20' : ''
+          change ? 'backdrop-blur-sm bg-black/40' : ''
         }`}
       >
         <div className="w-full relative h-full flex items-center justify-between md:px-14 px-8">
@@ -149,17 +152,19 @@ const Nav = () => {
             </svg>
           </span>
           {/* content */}
-          <ul
-            className={`flex-col z-40 flex sm:justify-end sm:flex-row text-neutral-100 sm:static absolute w-full left-0 -bottom-60 duration-300 transition-all overflow-hidden sm:translate-x-0 -translate-x-full ${
+          <div
+            className={`flex-col z-40 flex sm:justify-end sm:flex-row text-neutral-100 sm:static absolute w-full left-0 -bottom-[410px] duration-300 transition-all overflow-hidden sm:translate-x-0 -translate-x-full ${
               active ? 'translate-x-0' : ''
             }`}
           >
-            <li onClick={hi} id='Home' className="nav text-center">
-              HOME
-            </li>
-            <li className="nav text-center">WORK</li>
-            <li className="nav text-center">ABOUT</li>
-          </ul>
+            
+            <Link className="nav text-center relative" offset={0} duration={200} activeClass="active" smooth spy to="home">HOME</Link>
+            
+            <Link className="nav text-center relative"  offset={0} duration={200} activeClass="active" smooth spy to="clients">ClIENTS</Link>
+            <Link className="nav text-center relative" offset={0} duration={200} activeClass="active" smooth spy to="work">WORK</Link>
+            <Link className="nav text-center relative" offset={0} duration={200} activeClass="active" smooth spy to="about">ABOUT</Link>
+           <Link className="nav text-center relative" offset={0} isDynamic={true} duration={200} activeClass="active" smooth spy to="footer">CONTACT ME</Link>
+          </div>
         </div>
       </div>
     </>

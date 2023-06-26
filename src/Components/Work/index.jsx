@@ -4,7 +4,7 @@ const Work = () => {
   // work card
   const workCard = data.map((data) => {
     return (
-      <div className='flex flex-col md:odd:flex-row md:even:flex-row-reverse w-full'>
+      <div  data-aos="zoom-in" className='flex flex-col md:odd:flex-row md:even:flex-row-reverse w-full'>
       <span className="rounded-2xl md:w-1/2 h-1/2 md:h-auto flex items-center justify-center">
        <img
          className="rounded-2xl"
@@ -12,7 +12,7 @@ const Work = () => {
          alt="work"
        />
      </span>
-     <span className='flex flex-col md:w-1/2 h-1/2 md:h-auto justify-end pl-3 md:pl-8'>
+     <span className='flex flex-col md:w-1/2 h-1/2 md:h-auto pl-10 justify-end md:pl-8'>
        <h3 className='text text-lg py-8'>{data.title}</h3>
        <p className='text-gray-500 text-2xl leading-relaxed pb-6 pr-6'>
          {data.Description1} <span className='text'>
@@ -64,10 +64,10 @@ const Work = () => {
 
   return (
     <>
-      <div className="w-full bg-zinc-950 px-10 sm:px-18 pt-4 pb-16">
+      <div id="work" className="w-full bg-zinc-950 px-10 sm:px-20 pt-4 pb-16 max-h-max">
         <div className="w-full h-full flex flex-col">
           {/* title */}
-          <p className="font-light text-gray-500 text-3xl sm:text-4xl pb-16">
+          <p data-aos="fade-right" className="font-light text-gray-500 text-3xl sm:text-4xl pb-16">
             Selected <span className="text">Works</span>
           </p>
           {/* contaner work card */}

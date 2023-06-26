@@ -2,19 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
 * {
-  /* outline: 1px solid white; */
+  font-family: 'Work Sans', sans-serif;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #353434;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5b21b6;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed;
 }
 @layer components {
   /* nav */
-    .nav {
-      @apply sm:px-6 border-y bg-zinc-800 sm:bg-transparent sm:border-none py-7 md:p-7 sm:after:w-2/12 hover:text-purple-500 duration-300 after:duration-300 relative after:w-1/12 after:opacity-0 hover:after:opacity-100 cursor-pointer after:content-[""] after:bg-white after:h-1 after:absolute after:right-1/2 after:left-1/2 after:-translate-x-1/2 after:rounded-xl after:bottom-5
-    }
-    .active {
-      @apply sm:px-6 border-y bg-zinc-800 sm:bg-transparent sm:border-none py-7 md:p-7 sm:after:w-2/12 text-purple-500 duration-300 after:duration-300 relative after:w-1/12 after:content-[""] after:bg-white after:h-1 after:absolute after:right-1/2 after:left-1/2 after:-translate-x-1/2 after:rounded-xl after:bottom-5
-    }
-    /* main text */
-    .text {
-      @apply font-semibold text-neutral-50
-    }
+  .nav {
+    @apply sm:px-4 border-y  bg-violet-950/50 sm:bg-transparent sm:border-none py-7 md:py-7 sm:after:w-2/12 hover:text-purple-400 duration-300 after:duration-300 relative after:w-1/12 after:opacity-0 hover:after:opacity-100 cursor-pointer after:content-[""] after:bg-white after:h-1 after:absolute after:right-1/2 after:left-1/2 after:-translate-x-1/2 after:rounded-xl after:bottom-5;
+  }
+  .active {
+    @apply relative bg-transparent sm:border-none sm:after:w-2/12 text-purple-400 duration-300 after:duration-300 after:w-1/12 after:content-[""] after:bg-white after:h-1 after:absolute after:right-1/2 after:left-1/2 after:-translate-x-1/2 after:rounded-xl after:bottom-5;
+  }
+  /* main text */
+  .text {
+    @apply font-semibold text-neutral-50;
+  }
 }
+.neon1 {
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+.neon2 {
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #228DFF,
+               0 0 70px  #228DFF,
+               0 0 80px  #228DFF,
+               0 0 100px #228DFF,
+               0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #228DFF,
+               0 0 35px #228DFF,
+               0 0 40px #228DFF,
+               0 0 50px #228DFF,
+               0 0 75px #228DFF;
+  }
+}
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #FF1177,
+               0 0 70px  #FF1177,
+               0 0 80px  #FF1177,
+               0 0 100px #FF1177,
+               0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #FF1177,
+               0 0 35px #FF1177,
+               0 0 40px #FF1177,
+               0 0 50px #FF1177,
+               0 0 75px #FF1177;
+  }
+}
+.neon4 {
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
