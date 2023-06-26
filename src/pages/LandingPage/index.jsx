@@ -22,7 +22,7 @@ const LandingPage = () => {
         {/* text */}
       <div id="home" className='flex items-center justify-center h-full w-full relative px-4'>
         <h1 data-aos="zoom-in" className='text-center md:text-6xl text-3xl sm:text-5xl font-light leading-relaxed sm:leading-relaxed md:leading-normal text-gray-500 cursor-default select-none'>
-        I’m a designer specialising in <span className='text font-medium neon2'>UI/UX</span> and <span className='text font-normal neon1'>Interaction Design</span>
+        I’m a designer specialising in <span className='text font-medium neon3'>UI/UX</span> and <span className='text font-normal neon3'>Interaction Design</span>
         </h1>
       {/* cheron down*/}
       <span className='animate-bounce text-neutral-50 flex flex-auto absolute bottom-8'>
