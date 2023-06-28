@@ -14,7 +14,10 @@ const Footer = () => {
             </p>
           </div>
           <div data-aos="zoom-out" className="flex items-center gap-x-6 sm:gap-x-24">
+            {/* mail */}
             <span className='cursor-pointer sm:p-2 '>
+                            {/* add link here */}
+            <a className='w-full h-full' href="#" target='_blank'>
               <svg
                 className="text-gray-400 hover:text-white opacity-[0.55] hover:opacity-90 duration-200"
                 width="48"
@@ -32,8 +35,12 @@ const Footer = () => {
                   fill="currentColor"
                 />
               </svg>
+              </a>
             </span>
+            {/*  */}
             <span className='cursor-pointer sm:p-2 '>
+              {/* add link here */}
+              <a className='w-full h-full' href="#" target='_blank'>
               <svg
                 className="text-gray-400 hover:text-white opacity-[0.55] hover:opacity-90 duration-200"
                 width="48"
@@ -47,8 +54,12 @@ const Footer = () => {
                   fill="currentColor"
                 />
               </svg>
+              </a>
             </span>
+            {/* dribble */}
             <span className='cursor-pointer sm:p-2 '>
+                            {/* add link here */}
+                            <a className='w-full h-full' href="#" target='_blank'>
               <svg
                 className="text-gray-400 hover:text-white opacity-[0.55] hover:opacity-90 duration-200"
                 width="48"
@@ -65,8 +76,12 @@ const Footer = () => {
                   stroke-linejoin="round"
                 />
               </svg>
+              </a>
             </span>
+            {/* linkdin */}
             <span className='cursor-pointer sm:p-2 '>
+                            {/* add link here */}
+                            <a className='w-full h-full' href="#" target='_blank'>
               <svg
                 className="text-gray-400 hover:text-white opacity-[0.55] hover:opacity-90 duration-200"
                 width="48"
@@ -94,10 +109,12 @@ const Footer = () => {
                   fill="currentColor"
                 />
               </svg>
+              </a>
             </span>
+            {/* ----- */}
           </div>
           <p data-aos="zoom-out" className="text-gray-500 text-3xl font-normal select-none cursor-default">
-            Made with ❣️ by <span className="text neon4">Amir</span>
+            Made with ❣️ by <span className="text neon4">Amir</span> & <span className="text neon4">Sina</span>
           </p>
         </div>
       </div>
