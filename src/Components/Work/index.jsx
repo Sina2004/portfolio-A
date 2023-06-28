@@ -20,10 +20,16 @@ const Work = () => {
          </span>
        </p>
        <p className='text-gray-500 text-lg pb-8'>{data.category}</p>
+<<<<<<< HEAD
        {/* add link here */}
         <a className='mb-8 mt-4 w-40' href="#" target="_blank">
        <button className='uppercase w-full duration-200 hover:bg-purple-500 group hover:border-white hover:text-white text-base flex text-gray-400 border border-gray-400 py-1 px-0.5 items-center justify-center rounded-2xl '>
+=======
+        <a href='https://dribbble.com/Woas_Sina/shots'>
+         <button className='uppercase duration-200 hover:bg-purple-500 group hover:border-white hover:text-white text-base flex text-gray-400 border mb-8 mt-4 border-gray-400 py-1 px-0.5 items-center justify-center rounded-2xl w-40'>
+>>>>>>> d3a1b75ef25b28ffd435fc3191e7ccee1e1ea7de
          view Work
+        </a>
          {/* chevron right */}
          <span className='pl-3 group-hover:hidden'>
            <svg

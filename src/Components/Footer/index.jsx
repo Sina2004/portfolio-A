@@ -14,10 +14,15 @@ const Footer = () => {
             </p>
           </div>
           <div data-aos="zoom-out" className="flex items-center gap-x-6 sm:gap-x-24">
+<<<<<<< HEAD
             {/* mail */}
             <span className='cursor-pointer sm:p-2 '>
                             {/* add link here */}
             <a className='w-full h-full' href="#" target='_blank'>
+=======
+            <span className='cursor-pointer sm:p-2 ' >
+              <a href="mailto:sinab.work@gmail.com">
+>>>>>>> d3a1b75ef25b28ffd435fc3191e7ccee1e1ea7de
               <svg
                 className="text-gray-400 hover:text-white opacity-[0.55] hover:opacity-90 duration-200"
                 width="48"
@@ -39,9 +44,14 @@ const Footer = () => {
             </span>
             {/*  */}
             <span className='cursor-pointer sm:p-2 '>
+<<<<<<< HEAD
               {/* add link here */}
               <a className='w-full h-full' href="#" target='_blank'>
               <svg
+=======
+              <a href="https://www.behance.net/mrsaher" className='no-underline'>
+               <svg
+>>>>>>> d3a1b75ef25b28ffd435fc3191e7ccee1e1ea7de
                 className="text-gray-400 hover:text-white opacity-[0.55] hover:opacity-90 duration-200"
                 width="48"
                 height="48"
@@ -58,8 +68,12 @@ const Footer = () => {
             </span>
             {/* dribble */}
             <span className='cursor-pointer sm:p-2 '>
+<<<<<<< HEAD
                             {/* add link here */}
                             <a className='w-full h-full' href="#" target='_blank'>
+=======
+              <a href="https://dribbble.com/Woas_Sina" className='no-underline'>
+>>>>>>> d3a1b75ef25b28ffd435fc3191e7ccee1e1ea7de
               <svg
                 className="text-gray-400 hover:text-white opacity-[0.55] hover:opacity-90 duration-200"
                 width="48"
@@ -80,9 +94,14 @@ const Footer = () => {
             </span>
             {/* linkdin */}
             <span className='cursor-pointer sm:p-2 '>
+<<<<<<< HEAD
                             {/* add link here */}
                             <a className='w-full h-full' href="#" target='_blank'>
               <svg
+=======
+               <a href="https://www.linkedin.com/" className='no-underline'>
+                <svg
+>>>>>>> d3a1b75ef25b28ffd435fc3191e7ccee1e1ea7de
                 className="text-gray-400 hover:text-white opacity-[0.55] hover:opacity-90 duration-200"
                 width="48"
                 height="48"
@@ -109,7 +128,11 @@ const Footer = () => {
                   fill="currentColor"
                 />
               </svg>
+<<<<<<< HEAD
               </a>
+=======
+               </a>
+>>>>>>> d3a1b75ef25b28ffd435fc3191e7ccee1e1ea7de
             </span>
             {/* ----- */}
           </div>
