@@ -113,7 +113,7 @@ const Footer = () => {
             </span>
             {/* ----- */}
           </div>
-          <p data-aos="zoom-out" className="text-gray-500 text-3xl font-normal select-none cursor-default">
+          <p data-aos="zoom-out" className="text-gray-500 text-2xl px-4 font-normal select-none cursor-default">
             Made with ❣️ by <span className="text neon4">Amir</span> & <span className="text neon4">Sina</span>
           </p>
         </div>
