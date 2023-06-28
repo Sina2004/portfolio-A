@@ -20,8 +20,10 @@ const Work = () => {
          </span>
        </p>
        <p className='text-gray-500 text-lg pb-8'>{data.category}</p>
-       <button className='uppercase duration-200 hover:bg-purple-500 group hover:border-white hover:text-white text-base flex text-gray-400 border mb-8 mt-4 border-gray-400 py-1 px-0.5 items-center justify-center rounded-2xl w-40'>
+        <a href='https://dribbble.com/Woas_Sina/shots'>
+         <button className='uppercase duration-200 hover:bg-purple-500 group hover:border-white hover:text-white text-base flex text-gray-400 border mb-8 mt-4 border-gray-400 py-1 px-0.5 items-center justify-center rounded-2xl w-40'>
          view Work
+        </a>
          {/* chevron right */}
          <span className='pl-3 group-hover:hidden'>
            <svg
