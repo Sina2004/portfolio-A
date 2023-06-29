@@ -17,7 +17,7 @@ const Footer = () => {
             {/* mail */}
             <span className='cursor-pointer sm:p-2 '>
                             {/* add link here */}
-            <a className='w-full h-full' href="#" target='_blank'>
+            <a className='w-full h-full' href="sinab.work@gmail.com" target='_blank'>
               <svg
                 className="text-gray-400 hover:text-white opacity-[0.55] hover:opacity-90 duration-200"
                 width="48"
@@ -40,7 +40,7 @@ const Footer = () => {
             {/*  */}
             <span className='cursor-pointer sm:p-2 '>
               {/* add link here */}
-              <a className='w-full h-full' href="#" target='_blank'>
+              <a className='w-full h-full' href="https://www.behance.net/mrsaher" target='_blank'>
               <svg
                 className="text-gray-400 hover:text-white opacity-[0.55] hover:opacity-90 duration-200"
                 width="48"
@@ -59,7 +59,7 @@ const Footer = () => {
             {/* dribble */}
             <span className='cursor-pointer sm:p-2 '>
                             {/* add link here */}
-                            <a className='w-full h-full' href="#" target='_blank'>
+                            <a className='w-full h-full' href="https://dribbble.com/Woas_Sina/shots" target='_blank'>
               <svg
                 className="text-gray-400 hover:text-white opacity-[0.55] hover:opacity-90 duration-200"
                 width="48"
@@ -81,7 +81,7 @@ const Footer = () => {
             {/* linkdin */}
             <span className='cursor-pointer sm:p-2 '>
                             {/* add link here */}
-                            <a className='w-full h-full' href="#" target='_blank'>
+                            <a className='w-full h-full' href="https://www.linkedin.com/" target='_blank'>
               <svg
                 className="text-gray-400 hover:text-white opacity-[0.55] hover:opacity-90 duration-200"
                 width="48"
